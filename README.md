@@ -1,4 +1,4 @@
-# Udayabhrathi's DSA - Problem Solving portfolio
+# Udayabhrathi Thiagarajan's DSA - Problem Solving portfolio
 Integrated with [Leetcode](https://leetcode.com) via [LeetHub](https://github.com/QasimWani/LeetHub).
 
 Connect with me @ [linkedin.com/in/udayabharathi-t](https://www.linkedin.com/in/udayabharathi-t/)!
