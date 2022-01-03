@@ -1,27 +1,13 @@
 func findJudge(n int, trust [][]int) int {
-    if len(trust) == 0 && n == 1 {
-        return 1
-    }
-    a := make(map[int]map[int]struct{})
-    b := make(map[int]map[int]struct{})
-    for _, i := range trust {
-        if _, ok := a[i[0]]; !ok {
-            a[i[0]] = make(map[int]struct{})
-        }
-        a[i[0]][i[1]] = struct{}{}
-        if _, ok := b[i[1]]; !ok {
-            b[i[1]] = make(map[int]struct{})
-        }
-        b[i[1]][i[0]] = struct{}{}
+    count := make([]int, n)
+    for _, t := range trust {
+        count[t[0]-1]--
+        count[t[1]-1]++
     }
     
-    for i:=1; i<=n; i++ {
-        if _, ok := a[i]; !ok {
-            if val, ok := b[i]; ok {
-                if len(val) == n-1 {
-                    return i
-                }
-            }
+    for i:=0; i<n; i++ {
+        if count[i] == n-1 {
+            return i+1
         }
     }
     
