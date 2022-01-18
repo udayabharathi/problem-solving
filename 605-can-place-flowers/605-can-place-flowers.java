@@ -9,6 +9,8 @@ class Solution {
             if (canPlace(i)) {
                 count++;
                 flowerbed[i] = 1;
+                if (count == n)
+                    return true;
             }
         }
         return count >= n;
