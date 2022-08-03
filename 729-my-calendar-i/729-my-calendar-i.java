@@ -15,21 +15,6 @@ class MyCalendar {
 
         map.put(start, end);
         return true;
-        // if (floorEntry == null && ceilingEntry == null) {
-        //     map.put(start, end);
-        //     return true;
-        // } else if (floorEntry == null && ceilingEntry.getKey() >= end) {
-        //     map.put(start, end);
-        //     return true;
-        // } else if (ceilingEntry == null && floorEntry.getValue() <= start) {
-        //     map.put(start, end);
-        //     return true;
-        // } else if (floorEntry != null && ceilingEntry != null && floorEntry.getValue() <= start && ceilingEntry.getKey() >= end) {
-        //     map.put(start, end);
-        //     return true;
-        // } else {
-        //     return false;
-        // }
     }
 }
 
